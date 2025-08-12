@@ -1,0 +1,25 @@
+
+<div class="autocomplete-container">
+	<input
+		#inputRef
+		type="text"
+		class="autocomplete-input"
+		[value]="searchTerm"
+		(input)="onInput($event)"
+		(focus)="onFocus()"
+		(blur)="onBlur()"
+		(keydown)="onKeyDown($event)"
+		autocomplete="off"
+		placeholder="Type to search..."
+	/>
+	<ul *ngIf="showResults" class="autocomplete-list">
+		<li
+			*ngFor="let option of filteredOptions; let i = index"
+			[class.active]="i === activeIndex"
+			(mousedown)="selectOption(option)"
+		>
+			{{ option }}
+		</li>
+		<li *ngIf="filteredOptions.length === 0" class="no-results">No results</li>
+	</ul>
+</div>

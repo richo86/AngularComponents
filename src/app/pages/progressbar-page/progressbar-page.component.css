@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --primary-color: #4caf50;
+  --secondary-color: #81c784;
+  --bg-color: #f0f0f0;
+  --card-bg: #ffffff;
+  --text-color: #333;
+  --code-bg: #282c34;
+  --accent-color: #61dafb;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Container for the entire demo page */
+.demo-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.doc-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+header p {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+/* Header styling */
+.demo-header {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.demo-header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #4CAF50;
+}
+
+.demo-header p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.usage-section,
+.demo-section {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.usage-section h2,
+.demo-section h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 1.75rem;
+}
+
+/* Section (card) styling */
+.demo-section {
+  margin-top: 30px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.demo-section h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.code-container {
+  background-color: var(--code-bg);
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-top: 10px;
+}
+
+/* Styling for code example section */
+.code-example pre {
+  background: #272822;
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.95rem;
+  margin-top: 15px;
+}
+
+.code-container pre {
+  margin: 0;
+  color: var(--accent-color);
+  font-family: 'Source Code Pro', monospace;
+  font-size: 0.9rem;
+}
+
+.demo-section app-progress-bar {
+  display: block;
+  margin: 20px auto;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.controls label {
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.controls input[type="range"] {
+  width: 200px;
+  margin-right: 10px;
+}
+
+.progress-text {
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-top: 10px;
+}
+
+/* Styling for live example status display */
+.status {
+  margin-top: 10px;
+  font-size: 1.125rem;
+  color: #4CAF50;
+}
+
+footer {
+  padding-top: 20px;
+  border-top: 1px solid var(--bg-color);
+  font-size: 0.9rem;
+  color: var(--text-color);
+}

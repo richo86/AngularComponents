@@ -1,0 +1,46 @@
+<div class="demo-page">
+  <header class="demo-header">
+    <h1>Select Component Demo</h1>
+    <p>
+      Add a custom select dropdown to your Angular app. This demo shows how to use and customize the select component.
+    </p>
+  </header>
+
+  <section class="demo-section">
+    <h2>Live Example</h2>
+    <app-select [(model)]="selectedOption"></app-select>
+    <p class="status">Selected in parent: <strong>{{ selectedOption }}</strong></p>
+  </section>
+
+  <section class="demo-section code-example">
+    <h2>Usage Instructions</h2>
+    <p>
+      To use the select component, import the <code>SelectComponent</code> and add it to your template:
+    </p>
+    <pre><code class="language-html">
+    &lt;app-select [(model)]="selectedOption"&gt;&lt;/app-select&gt;
+    &lt;p&gt;Selected in parent: {{ selectedOption }}&lt;/p&gt;
+    </code></pre>
+    <p>
+      The <code>model</code> property supports two-way binding for reactive updates.
+    </p>
+  </section>
+
+  <section class="demo-section">
+    <h2>Component Details</h2>
+    <ul>
+      <li>
+        <strong>HTML Structure:</strong> Custom select dropdown and options.
+      </li>
+      <li>
+        <strong>CSS Styling:</strong> Modern dropdown styles, focus, and selection effects.
+      </li>
+      <li>
+        <strong>TypeScript Logic:</strong> Reactive selection and event emission.
+      </li>
+    </ul>
+    <p>
+      Easily customize the options, styles, and behaviors to fit your needs.
+    </p>
+  </section>
+</div>

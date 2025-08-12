@@ -1,0 +1,13 @@
+<label
+  *ngFor="let option of ['Option 1', 'Option 2', 'Option 3']"
+  class="radio-option"
+>
+  <input
+    type="radio"
+    [value]="option"
+    [checked]="selectedOption() === option"
+    (change)="select(option)"
+  />
+  <span class="custom-radio"></span>
+  <span class="option-text">{{ option }}</span>
+</label>

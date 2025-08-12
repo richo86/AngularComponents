@@ -1,0 +1,46 @@
+<div class="demo-page">
+  <header class="demo-header">
+    <h1>Datepicker Component Demo</h1>
+    <p>
+      Add a modern datepicker to your Angular app. This demo shows how to use and customize the component.
+    </p>
+  </header>
+
+  <section class="demo-section">
+    <h2>Live Example</h2>
+    <app-datepicker [(selectedDate)]="parentDate"></app-datepicker>
+    <p class="status">Selected Date: <strong>{{ parentDate() }}</strong></p>
+  </section>
+
+  <section class="demo-section code-example">
+    <h2>Usage Instructions</h2>
+    <p>
+      To use the datepicker, import the <code>DatepickerComponent</code> and add it to your template:
+    </p>
+    <pre><code class="language-html">
+    &lt;app-datepicker [(selectedDate)]="parentDate"&gt;&lt;/app-datepicker&gt;
+    &lt;p&gt;Selected Date: {{ parentDate() }}&lt;/p&gt;
+    </code></pre>
+    <p>
+      The <code>selectedDate</code> property supports two-way binding for reactive updates.
+    </p>
+  </section>
+
+  <section class="demo-section">
+    <h2>Component Details</h2>
+    <ul>
+      <li>
+        <strong>HTML Structure:</strong> Calendar input and read-only date field.
+      </li>
+      <li>
+        <strong>CSS Styling:</strong> Customizable calendar and input styles.
+      </li>
+      <li>
+        <strong>TypeScript Logic:</strong> Reactive date selection and event handling.
+      </li>
+    </ul>
+    <p>
+      Adjust colors, borders, and fonts in <code>datepicker.component.css</code> to match your theme.
+    </p>
+  </section>
+</div>

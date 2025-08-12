@@ -1,0 +1,6 @@
+<label for="customSelect">Choose an option:</label>
+<select id="customSelect" (change)="onSelectChange($event)" [value]="model">
+  <option *ngFor="let item of items" [value]="item" [selected]="model === item">
+    {{ item }}
+  </option>
+</select>

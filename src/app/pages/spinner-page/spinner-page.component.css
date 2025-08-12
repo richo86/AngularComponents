@@ -1,0 +1,160 @@
+/* Container for the entire demo page */
+.demo-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styling */
+.demo-header {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.demo-header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #4CAF50;
+}
+
+.demo-header p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Section (card) styling */
+.demo-section {
+  margin-top: 30px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.demo-section h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Styling for live example status display */
+.status {
+  margin-top: 10px;
+  font-size: 1.125rem;
+  color: #4CAF50;
+}
+
+/* Styling for code example section */
+.code-example pre {
+  background: #272822;
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.95rem;
+  margin-top: 15px;
+}
+
+/* Container for the documentation page */
+.doc-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* Header styling */
+.doc-header {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.doc-header h1 {
+  font-size: 2.5rem;
+  color: #2B2D42;
+  margin-bottom: 10px;
+}
+
+.intro {
+  font-size: 1.1rem;
+  color: #4F4F4F;
+  margin-bottom: 20px;
+}
+
+/* Toggle button for the demo */
+.toggle-btn {
+  background-color: #2B2D42;
+  color: #EDF2F4;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #8D99AE;
+}
+
+/* Demo section styling */
+.doc-demo {
+  text-align: center;
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.spinner-demo {
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+}
+
+/* Documentation section styling */
+.doc-section {
+  margin: 40px 0;
+}
+
+.doc-section h2 {
+  font-size: 2rem;
+  color: #2B2D42;
+  margin-bottom: 15px;
+}
+
+.doc-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+pre {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  color: #d63384;
+}
+
+/* Footer styling */
+.doc-footer {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid #ccc;
+  font-size: 0.9rem;
+  color: #777;
+}

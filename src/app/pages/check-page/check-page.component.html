@@ -1,0 +1,70 @@
+<div class="demo-page">
+  <header class="demo-header">
+    <h1>Custom Checkbox Component Demo</h1>
+    <p>
+      Enhance your application’s UI with our modern, custom-styled checkbox. This demo shows
+      you how to integrate and use the component in your Angular projects.
+    </p>
+  </header>
+
+  <!-- Live Example Section -->
+  <section class="demo-section">
+    <h2>Live Example</h2>
+    <!-- Parent component binding example -->
+    <app-check [label]="'Accept Terms'" [(model)]="isChecked"></app-check>
+    <p class="status">Status: <strong>{{ isChecked() ? 'Checked' : 'Unchecked' }}</strong></p>
+  </section>
+
+  <!-- Usage Instructions Section -->
+  <section class="demo-section code-example">
+    <h2>Usage Instructions</h2>
+    <p>
+      To integrate this component into your Angular project, follow these steps:
+    </p>
+    <ol>
+      <li>
+        <strong>Add to Module:</strong> Ensure the <code>CheckComponent</code> is declared in your
+        Angular module.
+      </li>
+      <li>
+        <strong>Use in the Template:</strong> Insert the component using its selector. The component
+        supports two-way binding on its model property. For example:
+      </li>
+    </ol>
+    <pre><code class="language-html">
+    &lt;app-check [label]="'Accept Terms'" [(model)]="isChecked"&gt;&lt;/app-check&gt;
+    &lt;p&gt;Status: {{ isChecked() ? 'Checked' : 'Unchecked' }}&lt;/p&gt;
+    </code></pre>
+    <p>
+      The two-way binding for the <code>model</code> property ensures that both the parent and
+      child stay in sync with the checkbox state.
+    </p>
+  </section>
+
+  <!-- Component Details Section -->
+  <section class="demo-section">
+    <h2>Component Code Details</h2>
+    <p>
+      Our custom checkbox component replaces the default browser checkbox with a modern, interactive
+      design:
+    </p>
+    <ul>
+      <li>
+        <strong>HTML Structure:</strong> Hides the native checkbox and uses a visually styled
+        <code>&lt;span&gt;</code> element to display the check indicator.
+      </li>
+      <li>
+        <strong>CSS Styling:</strong> Features smooth transitions, color changes on check, hover,
+        and focus states for enhanced interactivity and accessibility.
+      </li>
+      <li>
+        <strong>TypeScript Logic:</strong> Uses Angular’s reactive <code>model</code> API for
+        streamlined state management.
+      </li>
+    </ul>
+    <p>
+      You can easily customize the colors, sizes, and transitions to match the project needs.
+    </p>
+  </section>
+
+</div>

@@ -1,0 +1,17 @@
+<div class="expansion-panel" [class.expanded]="isExpanded()">
+  <!-- Header / Summary Area -->
+  <div class="header" (click)="toggle()">
+    <div class="title">
+      <ng-content select="[panelTitle]"></ng-content>
+    </div>
+    <div class="arrow-icon" [class.rotated]="isExpanded()">
+      <!-- Unicode for downward arrow -->
+      &#9662;
+    </div>
+  </div>
+
+  <!-- Body / Expanded Content -->
+  <div class="body" *ngIf="isExpanded()">
+    <ng-content select="[panelContent]"></ng-content>
+  </div>
+</div>
