@@ -1,0 +1,58 @@
+<div class="demo-page">
+  <header class="demo-header">
+    <h1>Expansion Panel Component Demo</h1>
+    <p>
+      Add expandable content sections to your app. This demo shows how to use and customize the expansion panel component.
+    </p>
+  </header>
+
+  <section class="demo-section">
+    <h2>Live Example</h2>
+    <app-expansion-panel>
+      <div panelTitle>
+        <h3>Click to Expand</h3>
+      </div>
+      <div panelContent>
+        <p>This is the expanded content providing additional details you wish to show.</p>
+      </div>
+    </app-expansion-panel>
+  </section>
+
+  <section class="demo-section code-example">
+    <h2>Usage Instructions</h2>
+    <p>
+      To use the expansion panel, import the <code>ExpansionPanelComponent</code> and add it to your template:
+    </p>
+    <pre><code class="language-html">
+    &lt;app-expansion-panel&gt;
+      &lt;div panelTitle&gt;
+        &lt;h3&gt;Click to Expand&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div panelContent&gt;
+        &lt;p&gt;Expanded content here.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/app-expansion-panel&gt;
+    </code></pre>
+    <p>
+      The panel displays a summary and reveals more details when expanded.
+    </p>
+  </section>
+
+  <section class="demo-section">
+    <h2>Component Details</h2>
+    <ul>
+      <li>
+        <strong>HTML Structure:</strong> Header and content projection for flexible layouts.
+      </li>
+      <li>
+        <strong>CSS Styling:</strong> Smooth transitions, custom themes, and responsive design.
+      </li>
+      <li>
+        <strong>TypeScript Logic:</strong> Expand/collapse state management and animation.
+      </li>
+    </ul>
+    <p>
+      Customize colors, icons, and transitions in <code>expansion-panel.component.css</code>.
+    </p>
+  </section>
+</div>

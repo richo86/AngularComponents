@@ -1,0 +1,6 @@
+<div class="datepicker-container">
+  <input type="text" class="date-display" [value]="selectedDate()" readonly>
+  <div class="calendar">
+    <input type="date" class="date-input" [value]="selectedDate()" (change)="selectDate($event)">
+  </div>
+</div>

@@ -1,0 +1,145 @@
+/* Container for the entire demo page */
+.demo-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styling */
+.demo-header {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.demo-header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #4CAF50;
+}
+
+.demo-header p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Section (card) styling */
+.demo-section {
+  margin-top: 30px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.demo-section h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Styling for live example status display */
+.status {
+  margin-top: 10px;
+  font-size: 1.125rem;
+  color: #4CAF50;
+}
+
+/* Styling for code example section */
+.code-example pre {
+  background: #272822;
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.95rem;
+  margin-top: 15px;
+}
+
+/* Main documentation wrapper */
+.doc-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #333;
+}
+
+/* Header styling */
+.doc-header {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.doc-header h1 {
+  font-size: 2.5rem;
+  color: #2B2D42;
+  margin-bottom: 10px;
+}
+
+.intro {
+  font-size: 1.1rem;
+  color: #4F4F4F;
+  margin-bottom: 20px;
+}
+
+/* Live demo section styling */
+.code-demo {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 30px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.code-demo h2 {
+  color: #2B2D42;
+  margin-top: 0;
+}
+
+.selected {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Detailed usage instructions */
+.details {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.details h2,
+.details h3 {
+  color: #2B2D42;
+}
+
+.details p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+pre {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+
+/* Footer styling */
+.doc-footer {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid #ccc;
+  font-size: 0.9rem;
+  color: #777;
+}

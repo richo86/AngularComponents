@@ -1,0 +1,54 @@
+<app-sidenav>
+  <div class="doc-container">
+    <header class="doc-header">
+      <h1>Sidenav Component Documentation</h1>
+      <p class="doc-subtitle">
+        Welcome to the documentation page for the SidenavComponent. This guide explains how to integrate, customize, and use the responsive sidebar navigation—all with a sleek dark theme and dynamic content projection.
+      </p>
+      <button class="doc-toggle-btn" (click)="togglePageSidenav()">
+        Toggle Sidenav
+      </button>
+    </header>
+
+    <section class="doc-section">
+      <h2>Overview</h2>
+      <p>
+        The SidenavComponent is built with Angular and combines a responsive sidebar with content projection via
+        <code>&lt;ng-content&gt;</code>. When toggled, the sidebar moves between an expanded state (250px wide, showing icons, text, and a logo) and a collapsed state (35px wide, displaying only the icons). The main content, provided by the parent component, is automatically displaced to the right.
+      </p>
+    </section>
+
+    <section class="doc-section">
+      <h2>Usage Example</h2>
+      <p>
+        To use the SidenavComponent, first import it into your Angular module. Then wrap your page content within its tags. For instance:
+      </p>
+      <pre>
+<code>&lt;app-sidenav&gt;
+  &lt;div class="your-page-content"&gt;
+    &lt;h1&gt;Your Page Title&lt;/h1&gt;
+    &lt;p&gt;Your content goes here...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/app-sidenav&gt;</code>
+      </pre>
+    </section>
+
+    <section class="doc-section">
+      <h2>Customization</h2>
+      <p>
+        Fully adjust the sidebar’s appearance by editing the CSS. You can change the width values, colors, fonts, and transitions to suit your application’s aesthetics.
+      </p>
+    </section>
+
+    <section class="doc-section">
+      <h2>Toggle Functionality</h2>
+      <p>
+        The sidebar includes an internal toggle button that switches between the expanded and collapsed states. Additionally, you can control this behavior externally with Angular’s ViewChild if needed.
+      </p>
+    </section>
+
+    <footer class="doc-footer">
+      <p>For advanced customizations or support, please contact your development team.</p>
+    </footer>
+  </div>
+</app-sidenav>

@@ -1,0 +1,39 @@
+<div class="page-container">
+  <div class="sidebar-wrapper" [style.width.px]="isOpen ? 250 : 35">
+    <div class="sidenav" [class.closed]="!isOpen">
+  <div class="sidenav-header">
+    <button class="toggle-btn" (click)="toggleSidenav()" aria-label="Toggle Navigation">
+      <i class="fa fa-bars"></i>
+    </button>
+    <span class="logo" *ngIf="isOpen">MyApp</span>
+  </div>
+  <ul class="sidenav-list" *ngIf="isOpen">
+    <li class="sidenav-item">
+      <a href="#" class="sidenav-link">
+        <i class="fa fa-home"></i>
+        <span class="link-text">Home</span>
+      </a>
+    </li>
+    <li class="sidenav-item">
+      <a href="#" class="sidenav-link">
+        <i class="fa fa-user"></i>
+        <span class="link-text">Profile</span>
+      </a>
+    </li>
+    <li class="sidenav-item">
+      <a href="#" class="sidenav-link">
+        <i class="fa fa-cog"></i>
+        <span class="link-text">Settings</span>
+      </a>
+    </li>
+  </ul>
+  <div class="sidenav-footer" *ngIf="isOpen">
+    <p>Logged in as userexample.com</p>
+  </div>
+</div>
+  </div>
+  <div class="content-wrapper">
+    <!-- Page content goes here -->
+     <ng-content></ng-content>
+  </div>
+</div>

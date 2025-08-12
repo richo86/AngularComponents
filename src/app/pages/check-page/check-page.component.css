@@ -1,0 +1,72 @@
+/* Container for the entire demo page */
+.demo-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styling */
+.demo-header {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.demo-header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #4CAF50;
+}
+
+.demo-header p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Section (card) styling */
+.demo-section {
+  margin-top: 30px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.demo-section h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Styling for live example status display */
+.status {
+  margin-top: 10px;
+  font-size: 1.125rem;
+  color: #4CAF50;
+}
+
+/* Styling for code example section */
+.code-example pre {
+  background: #272822;
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.95rem;
+  margin-top: 15px;
+}
+
+.code-example code {
+  font-family: 'Source Code Pro', monospace;
+}
+
+/* Footer styling */
+.demo-footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #999;
+}

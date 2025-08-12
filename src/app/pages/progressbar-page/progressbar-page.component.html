@@ -1,0 +1,51 @@
+<div class="demo-page">
+  <header class="demo-header">
+    <h1>Progress Bar Component Demo</h1>
+    <p>
+      Add a modern progress bar to your Angular app. This demo shows how to use and customize the component.
+    </p>
+  </header>
+
+  <section class="demo-section">
+    <h2>Live Example</h2>
+    <app-progress-bar [(progress)]="progressValue"></app-progress-bar>
+    <div class="controls">
+      <label for="progressSlider">Adjust Progress:</label>
+      <input type="range" id="progressSlider" min="0" max="100" [(ngModel)]="progressValue">
+    </div>
+    <p class="status">Current Progress: <strong>{{ progressValue() }}%</strong></p>
+  </section>
+
+  <section class="demo-section code-example">
+    <h2>Usage Instructions</h2>
+    <p>
+      To use the progress bar, import the <code>ProgressBarComponent</code> and add it to your template:
+    </p>
+    <pre><code class="language-html">
+    &lt;app-progress-bar [(progress)]="progressValue"&gt;&lt;/app-progress-bar&gt;
+    &lt;input type="range" min="0" max="100" [(ngModel)]="progressValue"&gt;
+    &lt;p&gt;Current Progress: {{ progressValue() }}%&lt;/p&gt;
+    </code></pre>
+    <p>
+      The <code>progress</code> property supports two-way binding for reactive updates.
+    </p>
+  </section>
+
+  <section class="demo-section">
+    <h2>Component Details</h2>
+    <ul>
+      <li>
+        <strong>HTML Structure:</strong> Progress bar and slider input.
+      </li>
+      <li>
+        <strong>CSS Styling:</strong> Customizable bar, colors, and transitions.
+      </li>
+      <li>
+        <strong>TypeScript Logic:</strong> Reactive progress updates and event handling.
+      </li>
+    </ul>
+    <p>
+      Adjust colors, borders, and fonts in <code>progress-bar.component.css</code> to match your theme.
+    </p>
+  </section>
+</div>

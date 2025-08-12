@@ -1,0 +1,96 @@
+.sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background: #4CAF50;
+  color: #EDF2F4;
+  transition: width 0.3s ease;
+  padding: 20px;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.sidenav.closed {
+  width: 35px;
+  padding: 20px 10px;
+}
+
+.sidenav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.toggle-btn {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sidenav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav-item {
+  margin-bottom: 20px;
+}
+
+.sidenav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.sidenav-link:hover {
+  color: #8D99AE;
+}
+
+.sidenav-link i {
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+}
+
+.link-text {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.sidenav-footer {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  font-size: 14px;
+}
+
+.page-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Ensure the sidebar wrapper does not shrink; its width is defined by binding above */
+.sidebar-wrapper {
+  flex-shrink: 0;
+  transition: width 0.3s ease;
+}
+
+.content-wrapper {
+  flex: 1;
+  padding: 40px;
+  /* Remove margin-left so content starts immediately after the sidebar */
+}

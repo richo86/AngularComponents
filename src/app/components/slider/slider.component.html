@@ -1,0 +1,4 @@
+<div class="slider-container">
+    <input title="slider" type="range" min="0" max="100" [value]="sliderValue()" (input)="onSliderChange($event)">
+    <span class="slider-value">{{ sliderValue() }}</span>
+</div>

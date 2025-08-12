@@ -1,0 +1,49 @@
+<div class="demo-page">
+  <header class="demo-header">
+    <h1>Spinner Component Demo</h1>
+    <p>
+      Add a custom spinner to your Angular app. This demo shows how to use and customize the spinner component.
+    </p>
+  </header>
+
+  <section class="demo-section">
+    <h2>Live Example</h2>
+    <label>
+      <input type="checkbox" [checked]="getShowSpinnerDemo()" (change)="toggleShowSpinnerDemo()" /> Show Spinner
+    </label>
+    <app-spinner [(show)]="showSpinnerDemo"></app-spinner>
+    <p class="status" *ngIf="getShowSpinnerDemo()">Loading, please wait...</p>
+  </section>
+
+  <section class="demo-section code-example">
+    <h2>Usage Instructions</h2>
+    <p>
+      To use the spinner, import the <code>SpinnerComponent</code> and add it to your template:
+    </p>
+    <pre><code class="language-html">
+    &lt;app-spinner&gt;&lt;/app-spinner&gt;
+    &lt;p&gt;Loading, please wait...&lt;/p&gt;
+    </code></pre>
+    <p>
+      The spinner can be placed anywhere in your app to indicate loading states.
+    </p>
+  </section>
+
+  <section class="demo-section">
+    <h2>Component Details</h2>
+    <ul>
+      <li>
+        <strong>HTML Structure:</strong> Custom spinner element.
+      </li>
+      <li>
+        <strong>CSS Styling:</strong> Modern spinner animation and color customization.
+      </li>
+      <li>
+        <strong>TypeScript Logic:</strong> Simple, reusable loading indicator.
+      </li>
+    </ul>
+    <p>
+      Easily customize the spinner’s size, color, and animation in <code>spinner.component.css</code>.
+    </p>
+  </section>
+</div>
