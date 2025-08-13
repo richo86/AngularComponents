@@ -1,54 +1,56 @@
-<div class="demo-page">
-  <header class="demo-header">
-    <h1>Autocomplete Component Demo</h1>
-    <p>
-      Enhance your application’s UI with our custom autocomplete. This demo shows how to integrate and use the component in your Angular projects.
-    </p>
-  </header>
+<app-sidenav>
+    <div class="demo-page">
+    <header class="demo-header">
+        <h1>Autocomplete Component Demo</h1>
+        <p>
+        Enhance your application’s UI with our custom autocomplete. This demo shows how to integrate and use the component in your Angular projects.
+        </p>
+    </header>
 
-  <section class="demo-section">
-    <h2>Live Example</h2>
-    <app-autocomplete (optionSelected)="onOptionSelected($event)"></app-autocomplete>
-    <p class="status">Selected option: <strong>{{ selectedOption }}</strong></p>
-  </section>
+    <section class="demo-section">
+        <h2>Live Example</h2>
+        <app-autocomplete (optionSelected)="onOptionSelected($event)"></app-autocomplete>
+        <p class="status">Selected option: <strong>{{ selectedOption }}</strong></p>
+    </section>
 
-  <section class="demo-section code-example">
-    <h2>Usage Instructions</h2>
-    <p>
-      To integrate this component into your Angular project, follow these steps:
-    </p>
-    <ol>
-      <li>
-        <strong>Add to Module:</strong> Ensure the <code>AutocompleteComponent</code> is declared in your Angular module.
-      </li>
-      <li>
-        <strong>Use in the Template:</strong> Insert the component using its selector. For example:
-      </li>
-    </ol>
-    <pre><code class="language-html">
-    &lt;app-autocomplete (optionSelected)="onOptionSelected($event)"&gt;&lt;/app-autocomplete&gt;
-    &lt;p&gt;Selected option: {{ selectedOption }}&lt;/p&gt;
-    </code></pre>
-    <p>
-      The <code>optionSelected</code> event emits the selected value to the parent component.
-    </p>
-  </section>
+    <section class="demo-section code-example">
+        <h2>Usage Instructions</h2>
+        <p>
+        To integrate this component into your Angular project, follow these steps:
+        </p>
+        <ol>
+        <li>
+            <strong>Add to Module:</strong> Ensure the <code>AutocompleteComponent</code> is declared in your Angular module.
+        </li>
+        <li>
+            <strong>Use in the Template:</strong> Insert the component using its selector. For example:
+        </li>
+        </ol>
+        <pre><code class="language-html">
+        &lt;app-autocomplete (optionSelected)="onOptionSelected($event)"&gt;&lt;/app-autocomplete&gt;
+        &lt;p&gt;Selected option: {{ selectedOption }}&lt;/p&gt;
+        </code></pre>
+        <p>
+        The <code>optionSelected</code> event emits the selected value to the parent component.
+        </p>
+    </section>
 
-  <section class="demo-section">
-    <h2>Component Details</h2>
-    <ul>
-      <li>
-        <strong>HTML Structure:</strong> Input field with dropdown list of filtered options.
-      </li>
-      <li>
-        <strong>CSS Styling:</strong> Modern dropdown styling, keyboard navigation, and highlight.
-      </li>
-      <li>
-        <strong>TypeScript Logic:</strong> Filtering, selection, and event emission.
-      </li>
-    </ul>
-    <p>
-      Easily customize the options, styles, and behaviors to fit your needs.
-    </p>
-  </section>
-</div>
+    <section class="demo-section">
+        <h2>Component Details</h2>
+        <ul>
+        <li>
+            <strong>HTML Structure:</strong> Input field with dropdown list of filtered options.
+        </li>
+        <li>
+            <strong>CSS Styling:</strong> Modern dropdown styling, keyboard navigation, and highlight.
+        </li>
+        <li>
+            <strong>TypeScript Logic:</strong> Filtering, selection, and event emission.
+        </li>
+        </ul>
+        <p>
+        Easily customize the options, styles, and behaviors to fit your needs.
+        </p>
+    </section>
+    </div>
+</app-sidenav>

@@ -1,46 +1,49 @@
-<div class="demo-page">
-  <header class="demo-header">
-    <h1>Slide Component Demo</h1>
-    <p>
-      Add a custom slide switch to your Angular app. This demo shows how to use and customize the slide component.
-    </p>
-  </header>
+<app-sidenav>
+    <div class="demo-page">
+    <header class="demo-header">
+        <h1>Slide Component Demo</h1>
+        <p>
+        Add a custom slide switch to your Angular app. This demo shows how to use and customize the slide component.
+        </p>
+    </header>
 
-  <section class="demo-section">
-    <h2>Live Example</h2>
-    <app-slide-toggle [(checked)]="isToggled">Slide me!</app-slide-toggle>
-    <p class="status">Current state: <strong>{{ isToggled ? 'Enabled' : 'Disabled' }}</strong></p>
-  </section>
+    <section class="demo-section">
+        <h2>Live Example</h2>
+        <app-slide-toggle [(checked)]="isToggled">Slide me!</app-slide-toggle>
+        <p class="status">Current state: <strong>{{ isToggled ? 'Enabled' : 'Disabled' }}</strong></p>
+    </section>
 
-  <section class="demo-section code-example">
-    <h2>Usage Instructions</h2>
-    <p>
-      To use the slide component, import the <code>SlideComponent</code> and add it to your template:
-    </p>
-    <pre><code class="language-html">
-    &lt;app-slide [(checked)]="isToggled"&gt;Slide me!&lt;/app-slide&gt;
-    &lt;p&gt;Current state: {{ isToggled ? 'Enabled' : 'Disabled' }}&lt;/p&gt;
-    </code></pre>
-    <p>
-      The <code>checked</code> property supports two-way binding for reactive updates.
-    </p>
-  </section>
+    <section class="demo-section code-example">
+        <h2>Usage Instructions</h2>
+        <p>
+        To use the slide component, import the <code>SlideComponent</code> and add it to your template:
+        </p>
+        <pre><code class="language-html">
+        &lt;app-slide [(checked)]="isToggled"&gt;Slide me!&lt;/app-slide&gt;
+        &lt;p&gt;Current state: {{ isToggled ? 'Enabled' : 'Disabled' }}&lt;/p&gt;
+        </code></pre>
+        <p>
+        The <code>checked</code> property supports two-way binding for reactive updates.
+        </p>
+    </section>
 
-  <section class="demo-section">
-    <h2>Component Details</h2>
-    <ul>
-      <li>
-        <strong>HTML Structure:</strong> Custom slide switch and label.
-      </li>
-      <li>
-        <strong>CSS Styling:</strong> Modern switch styles, focus, and selection effects.
-      </li>
-      <li>
-        <strong>TypeScript Logic:</strong> Reactive toggle and event emission.
-      </li>
-    </ul>
-    <p>
-      Easily customize the styles and behaviors to fit your needs.
-    </p>
-  </section>
-</div>
+    <section class="demo-section">
+        <h2>Component Details</h2>
+        <ul>
+        <li>
+            <strong>HTML Structure:</strong> Custom slide switch and label.
+        </li>
+        <li>
+            <strong>CSS Styling:</strong> Modern switch styles, focus, and selection effects.
+        </li>
+        <li>
+            <strong>TypeScript Logic:</strong> Reactive toggle and event emission.
+        </li>
+        </ul>
+        <p>
+        Easily customize the styles and behaviors to fit your needs.
+        </p>
+    </section>
+    </div>
+</app-sidenav>
+

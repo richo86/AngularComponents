@@ -1,46 +1,48 @@
-<div class="demo-page">
-  <header class="demo-header">
-    <h1>Radio Component Demo</h1>
-    <p>
-      Explore our custom radio component. This demo shows how to use and customize the radio button in your Angular projects.
-    </p>
-  </header>
+<app-sidenav>
+  <div class="demo-page">
+    <header class="demo-header">
+      <h1>Radio Component Demo</h1>
+      <p>
+        Explore our custom radio component. This demo shows how to use and customize the radio button in your Angular projects.
+      </p>
+    </header>
 
-  <section class="demo-section">
-    <h2>Live Example</h2>
-    <app-radio [(selectedOption)]="selectedOption"></app-radio>
-    <p class="status">Selected option: <strong>{{ selectedOption() }}</strong></p>
-  </section>
+    <section class="demo-section">
+      <h2>Live Example</h2>
+      <app-radio [(selectedOption)]="selectedOption"></app-radio>
+      <p class="status">Selected option: <strong>{{ selectedOption() }}</strong></p>
+    </section>
 
-  <section class="demo-section code-example">
-    <h2>Usage Instructions</h2>
-    <p>
-      To use the radio component, import the <code>RadioComponent</code> and add it to your template:
-    </p>
-    <pre><code class="language-html">
-    &lt;app-radio [(selectedOption)]="selectedOption"&gt;&lt;/app-radio&gt;
-    &lt;p&gt;Selected option: {{ selectedOption() }}&lt;/p&gt;
-    </code></pre>
-    <p>
-      The <code>selectedOption</code> property supports two-way binding for reactive updates.
-    </p>
-  </section>
+    <section class="demo-section code-example">
+      <h2>Usage Instructions</h2>
+      <p>
+        To use the radio component, import the <code>RadioComponent</code> and add it to your template:
+      </p>
+      <pre><code class="language-html">
+      &lt;app-radio [(selectedOption)]="selectedOption"&gt;&lt;/app-radio&gt;
+      &lt;p&gt;Selected option: {{ selectedOption() }}&lt;/p&gt;
+      </code></pre>
+      <p>
+        The <code>selectedOption</code> property supports two-way binding for reactive updates.
+      </p>
+    </section>
 
-  <section class="demo-section">
-    <h2>Component Details</h2>
-    <ul>
-      <li>
-        <strong>HTML Structure:</strong> Custom radio button group.
-      </li>
-      <li>
-        <strong>CSS Styling:</strong> Modern radio styles, focus, and selection effects.
-      </li>
-      <li>
-        <strong>TypeScript Logic:</strong> Reactive selection and event emission.
-      </li>
-    </ul>
-    <p>
-      Easily customize the options, styles, and behaviors to fit your needs.
-    </p>
-  </section>
-</div>
+    <section class="demo-section">
+      <h2>Component Details</h2>
+      <ul>
+        <li>
+          <strong>HTML Structure:</strong> Custom radio button group.
+        </li>
+        <li>
+          <strong>CSS Styling:</strong> Modern radio styles, focus, and selection effects.
+        </li>
+        <li>
+          <strong>TypeScript Logic:</strong> Reactive selection and event emission.
+        </li>
+      </ul>
+      <p>
+        Easily customize the options, styles, and behaviors to fit your needs.
+      </p>
+    </section>
+  </div>
+</app-sidenav>

@@ -1,9 +1,10 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { ModalComponent } from '../../components/modal/modal.component';
+import { SidenavComponent } from '../../components/sidenav/sidenav.component';
 
 @Component({
   selector: 'app-modal-page',
-  imports: [ModalComponent],
+  imports: [ModalComponent, SidenavComponent],
   templateUrl: './modal-page.component.html',
   styleUrl: './modal-page.component.css',
 })
