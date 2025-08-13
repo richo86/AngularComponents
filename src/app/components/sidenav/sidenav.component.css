@@ -1,3 +1,8 @@
+.sidenav-link.active {
+  color: #91ff76;
+  border-radius: 4px;
+  font-weight: bold;
+}
 .sidenav {
   position: fixed;
   top: 0;

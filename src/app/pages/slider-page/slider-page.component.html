@@ -1,46 +1,48 @@
-<div class="demo-page">
-  <header class="demo-header">
-    <h1>Slider Component Demo</h1>
-    <p>
-      Add a custom slider to your Angular app. This demo shows how to use and customize the slider component.
-    </p>
-  </header>
+<app-sidenav>
+    <div class="demo-page">
+        <header class="demo-header">
+            <h1>Slider Component Demo</h1>
+            <p>
+            Add a custom slider to your Angular app. This demo shows how to use and customize the slider component.
+            </p>
+        </header>
 
-  <section class="demo-section">
-    <h2>Live Example</h2>
-    <app-slider [(sliderValue)]="sliderValue"></app-slider>
-    <p class="status">Slider value: <strong>{{ sliderValue() }}</strong></p>
-  </section>
+        <section class="demo-section">
+            <h2>Live Example</h2>
+            <app-slider [(sliderValue)]="sliderValue"></app-slider>
+            <p class="status">Slider value: <strong>{{ sliderValue() }}</strong></p>
+        </section>
 
-  <section class="demo-section code-example">
-    <h2>Usage Instructions</h2>
-    <p>
-      To use the slider component, import the <code>SliderComponent</code> and add it to your template:
-    </p>
-    <pre><code class="language-html">
-    &lt;app-slider [(sliderValue)]="sliderValue"&gt;&lt;/app-slider&gt;
-    &lt;p&gt;Slider value: {{ sliderValue() }}&lt;/p&gt;
-    </code></pre>
-    <p>
-      The <code>sliderValue</code> property supports two-way binding for reactive updates.
-    </p>
-  </section>
+        <section class="demo-section code-example">
+            <h2>Usage Instructions</h2>
+            <p>
+            To use the slider component, import the <code>SliderComponent</code> and add it to your template:
+            </p>
+            <pre><code class="language-html">
+            &lt;app-slider [(sliderValue)]="sliderValue"&gt;&lt;/app-slider&gt;
+            &lt;p&gt;Slider value: {{ sliderValue() }}&lt;/p&gt;
+            </code></pre>
+            <p>
+            The <code>sliderValue</code> property supports two-way binding for reactive updates.
+            </p>
+        </section>
 
-  <section class="demo-section">
-    <h2>Component Details</h2>
-    <ul>
-      <li>
-        <strong>HTML Structure:</strong> Custom slider and value display.
-      </li>
-      <li>
-        <strong>CSS Styling:</strong> Modern slider styles, focus, and selection effects.
-      </li>
-      <li>
-        <strong>TypeScript Logic:</strong> Reactive value updates and event emission.
-      </li>
-    </ul>
-    <p>
-      Easily customize the styles and behaviors to fit your needs.
-    </p>
-  </section>
-</div>
+        <section class="demo-section">
+            <h2>Component Details</h2>
+            <ul>
+            <li>
+                <strong>HTML Structure:</strong> Custom slider and value display.
+            </li>
+            <li>
+                <strong>CSS Styling:</strong> Modern slider styles, focus, and selection effects.
+            </li>
+            <li>
+                <strong>TypeScript Logic:</strong> Reactive value updates and event emission.
+            </li>
+            </ul>
+            <p>
+            Easily customize the styles and behaviors to fit your needs.
+            </p>
+        </section>
+    </div>
+</app-sidenav>

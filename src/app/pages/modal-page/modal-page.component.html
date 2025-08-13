@@ -1,10 +1,12 @@
-<h1>Modal Page</h1>
-<p>This page demonstrates the use of the modal component.</p>
+<app-sidenav>
+  <h1>Modal Page</h1>
+  <p>This page demonstrates the use of the modal component.</p>
 
-<button (click)="openModal()">Open Modal</button>
+  <button (click)="openModal()">Open Modal</button>
 
-<app-modal
-  [title]="modalTitle"
-  [content]="modalContent"
-  (closeModal)="closeModal()"
-></app-modal>
+  <app-modal
+    [title]="modalTitle"
+    [content]="modalContent"
+    (closeModal)="closeModal()"
+  ></app-modal>
+</app-sidenav>
